@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Map";
+}
+
+<div id="map" style="width:400px;height:600px"></div>
+<script>
+    $('#map').kendoMap({
+
+        layers: [{
+            urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+
+            attribution: '<iframe src="https://www.google.com/maps/d/embed?mid=1BcZ-qzOs6zhFex_4BOoJnbRGSPE&ehbc=2E312F" width="640" height="480"></iframe>'
+        }]
+
+    });
+</script>
+
